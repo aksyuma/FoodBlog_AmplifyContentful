@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Contentful Puublish Events
+name: Contentful Publish Events
 
 # Controls when the action will run. 
 on:
@@ -21,7 +21,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup Node
-        uses: actions/check@v2
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
