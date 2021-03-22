@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Contentful Puublish Events
+
+# Controls when the action will run. 
+on:
+    repository_dispatch:
+        types: [publish-event]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-18.04
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Setup Node
+        uses: actions/check@v2
+        with:
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+            
+      - run: yarn install
+      - run: yarn start --reset cache
+      - run: yarn test
+      - run: yarn build
+
+
+
