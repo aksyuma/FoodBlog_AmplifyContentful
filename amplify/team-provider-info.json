@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-foodblogamplifyconte-dev-140358-authRole",
+            "UnauthRoleArn": "arn:aws:iam::192506329820:role/amplify-foodblogamplifyconte-dev-140358-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::192506329820:role/amplify-foodblogamplifyconte-dev-140358-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-foodblogamplifyconte-dev-140358-deployment",
+            "UnauthRoleName": "amplify-foodblogamplifyconte-dev-140358-unauthRole",
+            "StackName": "amplify-foodblogamplifyconte-dev-140358",
+            "StackId": "arn:aws:cloudformation:eu-west-1:192506329820:stack/amplify-foodblogamplifyconte-dev-140358/b3a790e0-8b06-11eb-8853-06fb9198ab4b",
+            "AmplifyAppId": "d3eyvirxrx4veu"
+        },
+        "categories": {
+            "auth": {
+                "foodblogamplifyconte76266a27": {}
+            }
+        }
+    }
+}

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component} from 'react';
 import './App.css';
 import { client } from './client';
 import Posts from './components/Posts'
 
-class App extends React.Component {
+// import amplify modules
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
+
+class App extends Component {
     state = {
         articles: []
     }
@@ -39,4 +45,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default withAuthenticator(App, true);
