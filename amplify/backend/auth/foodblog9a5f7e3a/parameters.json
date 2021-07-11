@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "foodblogamplifyconte76266a27_identitypool_76266a27",
+    "identityPoolName": "foodblog9a5f7e3a_identitypool_9a5f7e3a",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "foodbl76266a27",
-    "userPoolName": "foodblogamplifyconte76266a27_userpool_76266a27",
+    "resourceNameTruncated": "foodbl9a5f7e3a",
+    "userPoolName": "foodblog9a5f7e3a_userpool_9a5f7e3a",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -20,7 +20,7 @@
     "requiredAttributes": [
         "email"
     ],
-    "userpoolClientGenerateSecret": true,
+    "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
         "email"
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "foodbl76266a27_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "foodbl9a5f7e3a_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "76266a27",
-    "resourceName": "foodblogamplifyconte76266a27",
+    "sharedId": "9a5f7e3a",
+    "resourceName": "foodblog9a5f7e3a",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -50,5 +50,7 @@
         "email"
     ],
     "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
     "dependsOn": []
 }

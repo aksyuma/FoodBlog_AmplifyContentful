@@ -1,10 +1,10 @@
 {
-	"auth": {
-		"foodblogamplifyconte76266a27": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [],
-			"customAuth": false
-		}
-	}
+  "auth": {
+    "foodblog9a5f7e3a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
 }
