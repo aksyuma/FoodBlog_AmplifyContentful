@@ -2,7 +2,6 @@
 
 A sample web app to test integration of [Contentful](https://www.contentful.com/) with [AWS Amplify](https://aws.amazon.com/amplify/).
 
-![Home Page](images/home_page.png)
 
 ## Prerequisites
 
